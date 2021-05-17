@@ -186,16 +186,13 @@ class Team51_Release {
 			self::abort( "!! Tag {$tag} already exists, please try again with a later version" );
 		}
 
-		$result = array();
+		shell_exec( 'git add -A' );
+		shell_exec( 'git commit -m "Pushed from Team 51 auto publish script with tag"' );
+		shell_exec( 'git push' );
+		shell_exec( sprintf( 'git tag -a %s -m "Release %s"', $tag, $tag ) );
+		shell_exec( 'git push --tags origin master' );
 
-		exec( 'git add -A', $result );
-		exec( 'git commit -m "Pushed from Team 51 auto publish script with tag"', $result );
-		exec( 'git push', $result );
-		exec( sprintf( 'git tag -a %s -m "Release %s"', $tag, $tag ), $result );
-		exec( 'git push --tags origin master', $result );
-
-		var_dump($result);
-
+		self::abort( "Finished creating release {$tag}, thank you, good bye" );
 	}
 
 	public function get_current_repo_tags(): array {
