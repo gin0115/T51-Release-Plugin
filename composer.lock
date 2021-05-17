@@ -1,0 +1,220 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "95ed0ff9729d356130adc0c1d2c1f3e0",
+    "packages": [
+        {
+            "name": "level-2/dice",
+            "version": "4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Level-2/Dice.git",
+                "reference": "3e9a8548398c01e2527110c916a93f6efa17ac9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Level-2/Dice/zipball/3e9a8548398c01e2527110c916a93f6efa17ac9c",
+                "reference": "3e9a8548398c01e2527110c916a93f6efa17ac9c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dice\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Butler",
+                    "email": "tom@r.je"
+                }
+            ],
+            "description": "A minimalist Dependency injection container (DIC) for PHP. Please note: 3.0+ is only compatible with PHP 7.0. The 2.0 branch is compatbile with PHP 5.6.",
+            "homepage": "http://r.je/dice.html",
+            "keywords": [
+                "dependency injection",
+                "dependency injection container",
+                "di",
+                "ioc"
+            ],
+            "time": "2021-04-20T14:06:06+00:00"
+        },
+        {
+            "name": "pinkcrab/hook-loader",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pink-Crab/Loader.git",
+                "reference": "ae53ce0ce075981d9595bd2f776dc98265c0d81f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pink-Crab/Loader/zipball/ae53ce0ce075981d9595bd2f776dc98265c0d81f",
+                "reference": "ae53ce0ce075981d9595bd2f776dc98265c0d81f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "*",
+                "gin0115/wpunit-helpers": "^1.0",
+                "object-calisthenics/phpcs-calisthenics-rules": "*",
+                "php-stubs/wordpress-stubs": "^5.6.0",
+                "phpstan/phpstan": "^0.12.6",
+                "phpunit/phpunit": "^7.0",
+                "roots/wordpress": "^5.5",
+                "symfony/var-dumper": "4.*",
+                "szepeviktor/phpstan-wordpress": "^0.7.2",
+                "wp-coding-standards/wpcs": "*",
+                "wp-phpunit/wp-phpunit": "^5.0",
+                "yoast/phpunit-polyfills": "^0.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PinkCrab\\Loader\\": "src"
+                },
+                "files": [
+                    "tests/Fixtures/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Glynn Quelch",
+                    "email": "glynn.quelch@pinkcrab.co.uk",
+                    "homepage": "http://clappo.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An object based hook loader for WordPress.",
+            "homepage": "https://pinkcrab.co.uk",
+            "time": "2021-05-08T08:17:08+00:00"
+        },
+        {
+            "name": "pinkcrab/perique-framework-core",
+            "version": "0.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pink-Crab/Perqiue-Framework.git",
+                "reference": "093818f6dea280894614e7e7c4b0a6c3daf7707b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pink-Crab/Perqiue-Framework/zipball/093818f6dea280894614e7e7c4b0a6c3daf7707b",
+                "reference": "093818f6dea280894614e7e7c4b0a6c3daf7707b",
+                "shasum": ""
+            },
+            "require": {
+                "level-2/dice": "4.0.*",
+                "php": ">=7.1.0",
+                "pinkcrab/hook-loader": "^1.1.2",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "*",
+                "gin0115/wpunit-helpers": "^1.0",
+                "object-calisthenics/phpcs-calisthenics-rules": "*",
+                "php-stubs/wordpress-stubs": "^5.6.0",
+                "phpstan/phpstan": "^0.12.6",
+                "phpunit/phpunit": "^7.0",
+                "roots/wordpress": "^5.5",
+                "symfony/var-dumper": "4.*",
+                "szepeviktor/phpstan-wordpress": "^0.7.2",
+                "wp-coding-standards/wpcs": "*",
+                "wp-phpunit/wp-phpunit": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PinkCrab\\Perique\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Glynn Quelch",
+                    "email": "glynn.quelch@pinkcrab.co.uk",
+                    "homepage": "http://clappo.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The core package of the PinkCrab Perique framework.",
+            "homepage": "https://pinkcrab.co.uk",
+            "time": "2021-05-11T10:07:06+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2021-03-05T17:36:06+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

@@ -1,0 +1,14 @@
+{
+    "name": "glynn/t51-release-plugin",
+    "description": "Test",
+    "type": "libray",
+    "authors": [
+        {
+            "name": "gin0115",
+            "email": "glynn.quelch@gmail.com"
+        }
+    ],
+    "require": {
+        "pinkcrab/perique-framework-core": "^0.5.4"
+    }
+}
