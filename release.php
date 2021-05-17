@@ -180,10 +180,10 @@ class Team51_Release {
 		$current_tags = $this->get_current_repo_tags();
 		if ( in_array( $tag, $current_tags ) ) {
 			foreach ( $current_tags as $existing_tag ) {
-				self::output( "!! Tag: {$existing_tag}" );
+				self::output( "> Existing Tag: {$existing_tag}" );
 			}
 
-			self::abort( "!! Tag {$tag} already exists, please try again with a later version" );
+			self::abort( PHP_EOL . "!! Tag {$tag} already exists, please try again with a later version" );
 		}
 
 		shell_exec( 'git add -A' );
