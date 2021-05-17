@@ -1,0 +1,7 @@
+vendor
+wordpress
+
+coverage-report
+composer.lock
+clover.xml
+coverage.xml
