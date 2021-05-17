@@ -191,8 +191,10 @@ class Team51_Release {
 		exec( 'git add -A', $result );
 		exec( 'git commit -m "Pushed from Team 51 auto publish script with tag"', $result );
 		exec( 'git push', $result );
-		exec( sprintf( 'git tag -a %s -m "%s"', $tag, $tag ), $result );
+		exec( sprintf( 'git tag -a %s -m "Release %s"', $tag, $tag ), $result );
 		exec( 'git push --tags origin master', $result );
+
+		var_dump($result);
 
 	}
 
