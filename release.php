@@ -176,7 +176,24 @@ class Team51_Release {
 	}
 
 	public function tag_release( string $tag ) {
-		var_dump( $this->get_current_repo_tags() );
+		// Check if that tag already exist.
+		$current_tags = $this->get_current_repo_tags();
+		if ( in_array( $tag, $current_tags ) ) {
+			foreach ( $current_tags as $existing_tag ) {
+				self::output( "!! Tag: {$existing_tag}" );
+			}
+
+			self::abort( "!! Tag {$tag} already exists, please try again with a later version" );
+		}
+
+		$result = array();
+
+		shell_exec( 'git add -A' );
+		shell_exec( 'git commit -m "Pushed from Team 51 auto publish script with tag"' );
+		exec('git push', $result);
+		shell_exec( sprintf( 'git tag -a %s -m "%s"', $tag ) );
+		shell_exec( "git push origin {$tag}" );
+
 	}
 
 	public function get_current_repo_tags(): array {
