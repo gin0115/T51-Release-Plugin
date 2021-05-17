@@ -1,0 +1,25 @@
+{
+    "name": "t51-release-plugin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gin0115/T51-Release-Plugin.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gin0115/T51-Release-Plugin/issues"
+    },
+    "homepage": "https://github.com/gin0115/T51-Release-Plugin#readme",
+    "dependencies": {
+        "npm-package-example": "^1.1.2"
+    },
+    "devDependencies": {
+        "small": "^0.2.9"
+    }
+}
