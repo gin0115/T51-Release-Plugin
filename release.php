@@ -188,11 +188,11 @@ class Team51_Release {
 
 		$result = array();
 
-		shell_exec( 'git add -A' );
-		shell_exec( 'git commit -m "Pushed from Team 51 auto publish script with tag"' );
-		exec('git push', $result);
-		shell_exec( sprintf( 'git tag -a %s -m "%s"', $tag ) );
-		shell_exec( "git push origin {$tag}" );
+		exec( 'git add -A', $result );
+		exec( 'git commit -m "Pushed from Team 51 auto publish script with tag"', $result );
+		exec( 'git push', $result );
+		exec( sprintf( 'git tag -a %s -m "%s"', $tag, $tag ), $result );
+		exec( 'git push --tags origin master', $result );
 
 	}
 
